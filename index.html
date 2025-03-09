@@ -187,7 +187,7 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
         Click on any image to see results
       </p>
 
-      <!-- 图片网格 -->
+      
       <div class="image-grid">
         <img class="toggle-image" data-alt-src="static/images/output/0f900fe8-6eab-4f85-8121-29cac9509b94.png" 
         src="static/images/input/0f900fe8-6eab-4f85-8121-29cac9509b94.png">
@@ -218,45 +218,45 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
   </div>
 </section>
 
-<!-- CSS 样式 -->
+
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4列布局 */
-    gap: 5px; /* 图片间距 */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px; 
     justify-items: center;
     margin-top: 20px;
   }
 
   .image-grid img {
-    width: 100%; /* 图片填充网格 */
-    max-width: 300px; /* 限制最大宽度 */
-    height: auto; /* 保持图片比例 */
-    cursor: pointer; /* 鼠标悬停时显示手型 */
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    cursor: pointer; 
   }
 </style>
 
-<!-- JavaScript 代码 -->
+
 <script>
-  // 获取所有具有 "toggle-image" 类名的图片
+ 
   var images = document.querySelectorAll(".toggle-image");
 
   images.forEach(function(img) {
-    // 记录原始图片路径
+    
     var originalSrc = img.src;
     var altSrc = img.getAttribute("data-alt-src");
 
-    // 按住鼠标时切换图片
+    
     img.addEventListener("mousedown", function() {
       img.src = altSrc;
     });
 
-    // 松开鼠标时恢复图片
+   
     document.addEventListener("mouseup", function() {
       img.src = originalSrc;
     });
 
-    // 确保鼠标移出时也恢复图片（防止鼠标按住后移到外部）
+   
     img.addEventListener("mouseleave", function() {
       img.src = originalSrc;
     });
