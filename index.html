@@ -264,7 +264,36 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
 </script>
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container " style="text-align:center;">
+          <h2 class="title is-3">Dataset Construction</h2>
+          <p style="margin-bottom:1cm;">We first separate all video frames into two categories: background frames and foreground frames containing moving objects. Then, each foreground frame is paired with the temporally closest background frame to form a pair. Finally, object masks for the foreground frames are obtained using off-the-shelf segmentation models. This process results in high-quality, photorealistic triplets suitable for object removal tasks.
+          </p>
+      <div>
+       
 
+        <img id="method_sliding" src="static/images/data_pipeline_00.png" width="60%">
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container " style="text-align:center;">
+          <h2 class="title is-3">Architecture of OmniEraser</h2>
+          <p style="margin-bottom:1cm;">We propose Object-Background Guidance which use latent from object and background as joint input conditions to guide the denoising process.
+          </p>
+      <div>
+       
+
+        <img id="method_sliding" src="static/images/method_v3_00.png" width="60%">
+      </div>
+      </div>
+  </div>
+</section>
 
 <section class="hero is-small">
   <div class="hero-body">
