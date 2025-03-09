@@ -24,7 +24,7 @@
   <link rel="icon" type="image/x-icon" href="/path/to/your/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -39,6 +39,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <section class="hero">
@@ -166,8 +167,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Inpainting algorithms have achieved remarkable progress in removing objects from images, yet still face two challenges: 1) struggle to handle the object's visual effects such as shadow and reflection; 2) easily generate shape-like artifacts and unintended content.In this paper, we propose <strong>Video4Removal</strong>, a large-scale dataset comprising over 100,000 high-quality samples with realistic object shadows and reflections. By constructing object-background pairs from video frames with off-the-shelf vision models,the labor costs of data acquisition can be significantly reduced.
-To avoid generating shape-like artifacts and unintended content, we propose Object-Background Guidance, an elaborated paradigm that takes both the foreground object and background images.It can guide the diffusion process to harness richer contextual information.Based on the above two designs, we present <strong>OmniEraser</strong>, a novel method that seamlessly removes objects and their visual effects using only object masks as input.Extensive experiments show that OmniEraser significantly outperforms previous methods, particularly in complex in-the-wild scenes. And it also exhibits a strong generalization ability in anime-style images. 
+            Inpainting algorithms have achieved remarkable progress in removing objects from images, yet still face two challenges: 1) struggle to handle the object's visual effects such as shadow and reflection; 2) easily generate shape-like artifacts and unintended content. In this paper, we propose <strong>Video4Removal</strong>, a large-scale dataset comprising over 100,000 high-quality samples with realistic object shadows and reflections. By constructing object-background pairs from video frames with off-the-shelf vision models,the labor costs of data acquisition can be significantly reduced.
+To avoid generating shape-like artifacts and unintended content, we propose Object-Background Guidance, an elaborated paradigm that takes both the foreground object and background images. It can guide the diffusion process to harness richer contextual information. Based on the above two designs, we present <strong>OmniEraser</strong>, a novel method that seamlessly removes objects and their visual effects using only object masks as input. Extensive experiments show that OmniEraser significantly outperforms previous methods, particularly in complex in-the-wild scenes. And it also exhibits a strong generalization ability in anime-style images. 
 
             
           </p>
@@ -184,40 +185,64 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
     <div class="container" style="text-align:center;">
       <h2 class="title is-3">Visualization Results</h2>
       <p style="margin-bottom:1cm;">
-        Click on images to see results
+        Click on any image to see results
       </p>
 
-      
+
       <div class="image-grid">
-        <img class="toggle-image" data-alt-src="static/images/output/0f900fe8-6eab-4f85-8121-29cac9509b94.png" 
-        src="static/images/input/0f900fe8-6eab-4f85-8121-29cac9509b94.png">
-        <img class="toggle-image" data-alt-src="static/images/output/198b2f55-ccaa-4df4-8216-aab273c8570e.png" 
-        src="static/images/input/198b2f55-ccaa-4df4-8216-aab273c8570e.png">
-        <img class="toggle-image" data-alt-src="static/images/output/3c43156c-2b44-4ebf-9c47-7707ec60b166.png" 
-        src="static/images/input/3c43156c-2b44-4ebf-9c47-7707ec60b166.png">
-        <img class="toggle-image" data-alt-src="static/images/output/73ee07ec-7c41-4aef-9769-62213fa00a69.png" 
-        src="static/images/input/73ee07ec-7c41-4aef-9769-62213fa00a69.png">
-        <img class="toggle-image" data-alt-src="static/images/output/969a07ef-1d5c-42b5-8938-914e3a021781.png" 
-        src="static/images/input/969a07ef-1d5c-42b5-8938-914e3a021781.png">
-        <img class="toggle-image" data-alt-src="static/images/output/9a3b6af9-c733-46a4-88d4-d77604194102.png" 
-        src="static/images/input/9a3b6af9-c733-46a4-88d4-d77604194102.png">
-        <img class="toggle-image" data-alt-src="static/images/output/ba066105-7fcc-44b5-a20e-7443602d7bb9.png" 
-        src="static/images/input/ba066105-7fcc-44b5-a20e-7443602d7bb9.png">
-        <img class="toggle-image" data-alt-src="static/images/output/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png" 
-        src="static/images/input/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png">
-        <img class="toggle-image" data-alt-src="static/images/output/61b5a52f-c460-4962-9f77-6c192ff49aee.png" 
-        src="static/images/input/61b5a52f-c460-4962-9f77-6c192ff49aee.png">
-        <img class="toggle-image" data-alt-src="static/images/output/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png" 
-        src="static/images/input/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png">
-        <img class="toggle-image" data-alt-src="static/images/output/e5310526-069f-4641-bb6b-a0750bbe5135.png" 
-        src="static/images/input/e5310526-069f-4641-bb6b-a0750bbe5135.png">
-        <img class="toggle-image" data-alt-src="static/images/output/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png" 
-        src="static/images/input/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png">
+
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/0f900fe8-6eab-4f85-8121-29cac9509b94.png">
+          <img class="toggle-image alternate" src="static/images/output/0f900fe8-6eab-4f85-8121-29cac9509b94.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/198b2f55-ccaa-4df4-8216-aab273c8570e.png">
+          <img class="toggle-image alternate" src="static/images/output/198b2f55-ccaa-4df4-8216-aab273c8570e.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/3c43156c-2b44-4ebf-9c47-7707ec60b166.png">
+          <img class="toggle-image alternate" src="static/images/output/3c43156c-2b44-4ebf-9c47-7707ec60b166.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/73ee07ec-7c41-4aef-9769-62213fa00a69.png">
+          <img class="toggle-image alternate" src="static/images/output/73ee07ec-7c41-4aef-9769-62213fa00a69.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/969a07ef-1d5c-42b5-8938-914e3a021781.png">
+          <img class="toggle-image alternate" src="static/images/output/969a07ef-1d5c-42b5-8938-914e3a021781.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/9a3b6af9-c733-46a4-88d4-d77604194102.png">
+          <img class="toggle-image alternate" src="static/images/output/9a3b6af9-c733-46a4-88d4-d77604194102.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/ba066105-7fcc-44b5-a20e-7443602d7bb9.png">
+          <img class="toggle-image alternate" src="static/images/output/ba066105-7fcc-44b5-a20e-7443602d7bb9.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png">
+          <img class="toggle-image alternate" src="static/images/output/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/61b5a52f-c460-4962-9f77-6c192ff49aee.png">
+          <img class="toggle-image alternate" src="static/images/output/61b5a52f-c460-4962-9f77-6c192ff49aee.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png">
+          <img class="toggle-image alternate" src="static/images/output/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/e5310526-069f-4641-bb6b-a0750bbe5135.png">
+          <img class="toggle-image alternate" src="static/images/output/e5310526-069f-4641-bb6b-a0750bbe5135.png" style="opacity: 0;">
+        </div>
+        <div class="image-container">
+          <img class="toggle-image original" src="static/images/input/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png">
+          <img class="toggle-image alternate" src="static/images/output/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png" style="opacity: 0;">
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <style>
   .image-grid {
@@ -228,90 +253,188 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
     margin-top: 20px;
   }
 
-  .image-grid img {
-    width: 100%; 
-    max-width: 300px; 
-    height: auto; 
-    cursor: pointer; 
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1; 
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container .alternate {
+    opacity: 0; 
   }
 </style>
 
-
 <script>
- 
-  var images = document.querySelectorAll(".toggle-image");
 
-  images.forEach(function(img) {
-    
-    var originalSrc = img.src;
-    var altSrc = img.getAttribute("data-alt-src");
+  function preloadImages() {
+    var images = document.querySelectorAll(".toggle-image");
+    images.forEach(function(img) {
+      var src = img.src;
+      var tempImg = new Image();
+      tempImg.src = src;
+    });
+  }
 
-    
-    img.addEventListener("mousedown", function() {
-      img.src = altSrc;
+
+  preloadImages();
+
+
+  var imageContainers = document.querySelectorAll(".image-container");
+
+  imageContainers.forEach(function(container) {
+    var originalImg = container.querySelector(".original");
+    var alternateImg = container.querySelector(".alternate");
+
+
+    container.addEventListener("mousedown", function() {
+      originalImg.style.opacity = 0;
+      alternateImg.style.opacity = 1;
     });
 
-   
-    document.addEventListener("mouseup", function() {
-      img.src = originalSrc;
+
+    container.addEventListener("mouseup", function() {
+      originalImg.style.opacity = 1;
+      alternateImg.style.opacity = 0;
     });
 
-   
-    img.addEventListener("mouseleave", function() {
-      img.src = originalSrc;
+
+    container.addEventListener("mouseleave", function() {
+      originalImg.style.opacity = 1;
+      alternateImg.style.opacity = 0;
     });
   });
 </script>
 
 
-<section class="hero is-small">
-  <div class="hero-body">
-      <div class="container " style="text-align:center;">
-          <h2 class="title is-3">Dataset Construction</h2>
-          <p style="margin-bottom:1cm;">We first separate all video frames into two categories: background frames and foreground frames containing moving objects. Then, each foreground frame is paired with the temporally closest background frame to form a pair. Finally, object masks for the foreground frames are obtained using off-the-shelf segmentation models. This process results in high-quality, photorealistic triplets suitable for object removal tasks.
-          </p>
-      <div>
-       
-
-        <img id="method_sliding" src="static/images/data_pipeline_v2_00.png" width="60%">
-      </div>
-      </div>
-  </div>
-</section>
 
 
 <section class="hero is-small">
   <div class="hero-body">
-      <div class="container " style="text-align:center;">
-          <h2 class="title is-3">Architecture of OmniEraser</h2>
-          <p style="margin-bottom:1cm;">We propose Object-Background Guidance which use latent from object and background as joint input conditions to guide the denoising process.
-          </p>
-      <div>
-       
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-3">Video4Removal</h2>
+      <p style="margin-bottom:1cm;">
+        We introduce <strong>Video4Removal</strong>, a new photorealistic dataset for object removal, containing over 10,000 image pairs derived from real-world video recordings.
+      </p>
 
-        <img id="method_sliding" src="static/images/method_v4_00.png" width="60%">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_video4removal_00(1).png" alt="Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_video4removal_00(2).png" alt="Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_video4removal_00(3).png" alt="Image 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_video4removal_00(4).png" alt="Image 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_video4removal_00(5).png" alt="Image 5">
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
-      </div>
+    </div>
   </div>
 </section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 初始化 Swiper
+    const swiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    });
+  });
+</script>
+
+
 
 <section class="hero is-small">
   <div class="hero-body">
-      <div class="container " style="text-align:center;">
-          <h2 class="title is-3">Video4Removal</h2>
-          <p style="margin-bottom:1cm;">We introduce <strong>Video4Removal</strong>, a new photorealistic dataset for object removal, containing over 10,000 image pairs derived from real-world video recordings.
-          </p>
-      <div>
-       
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-3">RemovalBench</h2>
+      <p style="margin-bottom:1cm;">
+        We introduce a new benchmark <strong>RemovalBench</strong>, which contains 70 pairs of carefully crafted object and ground-truth examples.Each group of images shows the original image, ground truth, and object mask.
+      </p>
 
-        <img id="method_sliding" src="static/images/sup_vis_video4removal_00(1).png" width="60%">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_removal_benchmark_00(1).png" alt="Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_removal_benchmark_00(2).png" alt="Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_removal_benchmark_00(3).png" alt="Image 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/sup_vis_removal_benchmark_00(4).png" alt="Image 4">
+          </div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
-      </div>
+    </div>
   </div>
 </section>
 
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
 
-<section class="hero is-small">
+    const swiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    });
+  });
+</script>
+
+<!-- <section class="hero is-small">
   <div class="hero-body">
       <div class="container " style="text-align:center;">
           <h2 class="title is-3">RemovalBench</h2>
@@ -323,7 +446,7 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
       </div>
       </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- <section class="hero is-small">
