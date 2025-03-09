@@ -184,7 +184,7 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
   <div class="hero-body">
     <div class="container" style="text-align:center;">
       <h2 class="title is-3">Visualization Results</h2>
-      <p style="margin-bottom:1cm;">
+      <p style="margin-bottom:1cm;color: rgb(0, 200, 255);font-weight: bold;">
         Click on any image to see results
       </p>
 
@@ -245,6 +245,12 @@ To avoid generating shape-like artifacts and unintended content, we propose Obje
 </section>
 
 <style>
+
+    /* 分页器样式 */
+    .swiper-pagination {
+  display: none; /* 隐藏分页器 */
+}
+
   .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
