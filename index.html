@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>OmniEraser</title>
+
+  <link rel="icon" type="image/x-icon" href="/path/to/your/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">OmniEraser: Remove Objects and Their Effects in Images with Paired Video-Frame Data</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Runpu Wei</a><sup>* 1</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Zijin Yin</a><sup>* 1</sup>,</span>
+              <span class="author-block">
+                <a target="_blank">Shuo Zhang</a><sup>* 1</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">LanXiang Zhou</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Xueyi Wang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Chao Ban</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Tianwei Cao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Hao Sun</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a  target="_blank">Zhongjiang He</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Kongming Liang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                  <a  target="_blank">Zhanyu Ma</a><sup>1</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> PRIS, Beijing University of Posts and Telecommunications
+                      </span>
+                      <span class="author-block"><sup>2</sup> China Telecom Artificial Intelligence Technology Co.Ltd
+  <!--                      Conference name and year-->
+                        </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- CVPR link -->
+                     <!-- <span class="link-block">
+                       <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Tudosiu_MULAN_A_Multi_Layer_Annotated_Dataset_for_Controllable_Text-to-Image_Generation_CVPR_2024_paper.html" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                       <span class="icon">
+                         <i class="fas fa-file-pdf"></i>
+                       </span>
+                       <span>Paper</span>
+                     </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2501.07397" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/theSure/VDOR" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo-pirate.png" width="80%">
+                    </span>
+                    <span>Dataset(coming soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="http://10.160.4.184:1955/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/images/output.png" width="80%">
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+                 <!-- <span class="link-block">
+                       <a href="https://mulanrgba.github.io/" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                       <span class="icon">
+                         <i class="fas fa-file-pdf"></i>
+                       </span>
+                       <span>MuLAn RGBA</span>
+                     </a>
+                    </span> -->
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Inpainting algorithms have achieved remarkable progress in removing objects from images, yet still face two challenges: 1) struggle to handle the object's visual effects such as shadow and reflection; 2) easily generate shape-like artifacts and unintended content.In this paper, we propose <strong>Video4Removal</strong>, a large-scale dataset comprising over 100,000 high-quality samples with realistic object shadows and reflections. By constructing object-background pairs from video frames with off-the-shelf vision models,the labor costs of data acquisition can be significantly reduced.
+To avoid generating shape-like artifacts and unintended content, we propose Object-Background Guidance, an elaborated paradigm that takes both the foreground object and background images.It can guide the diffusion process to harness richer contextual information.Based on the above two designs, we present <strong>OmniEraser</strong>, a novel method that seamlessly removes objects and their visual effects using only object masks as input.Extensive experiments show that OmniEraser significantly outperforms previous methods, particularly in complex in-the-wild scenes. And it also exhibits a strong generalization ability in anime-style images. 
+
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-3">Visualization Results</h2>
+      <p style="margin-bottom:1cm;">
+        Click on any image to see results
+      </p>
+
+      <!-- 图片网格 -->
+      <div class="image-grid">
+        <img class="toggle-image" data-alt-src="static/images/output/0f900fe8-6eab-4f85-8121-29cac9509b94.png" 
+        src="static/images/input/0f900fe8-6eab-4f85-8121-29cac9509b94.png">
+        <img class="toggle-image" data-alt-src="static/images/output/198b2f55-ccaa-4df4-8216-aab273c8570e.png" 
+        src="static/images/input/198b2f55-ccaa-4df4-8216-aab273c8570e.png">
+        <img class="toggle-image" data-alt-src="static/images/output/3c43156c-2b44-4ebf-9c47-7707ec60b166.png" 
+        src="static/images/input/3c43156c-2b44-4ebf-9c47-7707ec60b166.png">
+        <img class="toggle-image" data-alt-src="static/images/output/73ee07ec-7c41-4aef-9769-62213fa00a69.png" 
+        src="static/images/input/73ee07ec-7c41-4aef-9769-62213fa00a69.png">
+        <img class="toggle-image" data-alt-src="static/images/output/969a07ef-1d5c-42b5-8938-914e3a021781.png" 
+        src="static/images/input/969a07ef-1d5c-42b5-8938-914e3a021781.png">
+        <img class="toggle-image" data-alt-src="static/images/output/9a3b6af9-c733-46a4-88d4-d77604194102.png" 
+        src="static/images/input/9a3b6af9-c733-46a4-88d4-d77604194102.png">
+        <img class="toggle-image" data-alt-src="static/images/output/ba066105-7fcc-44b5-a20e-7443602d7bb9.png" 
+        src="static/images/input/ba066105-7fcc-44b5-a20e-7443602d7bb9.png">
+        <img class="toggle-image" data-alt-src="static/images/output/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png" 
+        src="static/images/input/f948ed41-d1f9-4a3b-b40e-9d8c1a9b7c08.png">
+        <img class="toggle-image" data-alt-src="static/images/output/61b5a52f-c460-4962-9f77-6c192ff49aee.png" 
+        src="static/images/input/61b5a52f-c460-4962-9f77-6c192ff49aee.png">
+        <img class="toggle-image" data-alt-src="static/images/output/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png" 
+        src="static/images/input/91105b9a-ca6c-4a8c-a2f7-ea7e121a25e1.png">
+        <img class="toggle-image" data-alt-src="static/images/output/e5310526-069f-4641-bb6b-a0750bbe5135.png" 
+        src="static/images/input/e5310526-069f-4641-bb6b-a0750bbe5135.png">
+        <img class="toggle-image" data-alt-src="static/images/output/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png" 
+        src="static/images/input/67ae0e99-1a2d-488d-b738-24ecf3f45c9a.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS 样式 -->
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列布局 */
+    gap: 5px; /* 图片间距 */
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  .image-grid img {
+    width: 100%; /* 图片填充网格 */
+    max-width: 300px; /* 限制最大宽度 */
+    height: auto; /* 保持图片比例 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+  }
+</style>
+
+<!-- JavaScript 代码 -->
+<script>
+  // 获取所有具有 "toggle-image" 类名的图片
+  var images = document.querySelectorAll(".toggle-image");
+
+  images.forEach(function(img) {
+    // 记录原始图片路径
+    var originalSrc = img.src;
+    var altSrc = img.getAttribute("data-alt-src");
+
+    // 按住鼠标时切换图片
+    img.addEventListener("mousedown", function() {
+      img.src = altSrc;
+    });
+
+    // 松开鼠标时恢复图片
+    document.addEventListener("mouseup", function() {
+      img.src = originalSrc;
+    });
+
+    // 确保鼠标移出时也恢复图片（防止鼠标按住后移到外部）
+    img.addEventListener("mouseleave", function() {
+      img.src = originalSrc;
+    });
+  });
+</script>
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container " style="text-align:center;">
+          <h2 class="title is-3">Video4Removal</h2>
+          <p style="margin-bottom:1cm;">We introduce <strong>Video4Removal</strong>, a new photorealistic dataset for object removal, containing over 10,000 image pairs derived from real-world video recordings.
+          </p>
+      <div>
+       
+
+        <img id="method_sliding" src="static/images/sup_vis_video4removal_00.png" width="60%">
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container " style="text-align:center;">
+          <h2 class="title is-3">RemovalBench</h2>
+          <p style="margin-bottom:1cm;">We introduce a new benchmark <strong>RemovalBench</strong>, which contains 70 pairs of carefully crafted object and ground-truth examples.Each group of images shows the original image, ground truth, and object mask.
+          </p>
+      <div>
+       
+        <img id="method_sliding" src="static/images/sup_vis_removal_benchmark_00.png" width="60%">
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+      <div class="container " style="text-align:center;">
+          <h2 class="title is-3">Results</h2>
+          <p style="margin-bottom:1cm;">
+          </p>
+      <div>
+       
+        <img id="method_sliding" src="static/images/sup_vis_realworld_part1_00.png" width="60%">
+        <img id="method_sliding" src="static/images/sup_vis_realworld_part2_00.png" width="60%">
+        <img id="method_sliding" src="static/images/sup_vis_realworld_part3_00.png" width="60%">
+        <img id="method_sliding" src="static/images/sup_vis_realworld_part4_00.png" width="60%">
+        <img id="method_sliding" src="static/images/sup_vis_realworld_part5_00.png" width="60%">
+      </div>
+      </div>
+  </div>
+</section> -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
